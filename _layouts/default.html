@@ -1,0 +1,28 @@
+---
+layout: default 
+title: Hello World Blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hello World Blog</title>
+<link rel="stylesheet" media="screen" href="/css/master.css"/>
+</head>
+<body>
+<div id="container">
+  <header class="group">
+    <div class="header-inner">
+      <h1 class="logo"><a href="/">Hello World Blog.</a></h1>
+    </div>
+  </header>
+  <div id="content">
+    <ul>
+    {% for post in site.posts %}
+    <li><span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
+</body>
+</html>
