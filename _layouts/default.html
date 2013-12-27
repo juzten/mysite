@@ -17,11 +17,24 @@ title: Hello World Blog
     </div>
   </header>
   <div id="content">
+
     <ul>
     {% for post in site.posts %}
     <li><span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
     </ul>
+
+
+    <br>
+
+    <p>
+      <h2>ToDo List:</h2><br>
+      <ul style="padding-left:30px">
+        <li>Create responsive site template</li>
+        <li>Setup site url</li>
+        <li>add comment plugins</li>
+    </ul>
+    </p>
   </div>
 </div>
 </body>
