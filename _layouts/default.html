@@ -1,20 +1,116 @@
 ---
 layout: default 
-title: Hello World Blog
+title: jwspain.co
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Hello World Blog</title>
+<title>jwspain.co</title>
 <link rel="stylesheet" media="screen" href="{{ site.baseurl}}/css/master.css"/>
 </head>
 <body>
-<div id="container">
+<div id="pagewrap">
+  
+  <div id="header">
+    <header class="group">
+    <div class="header-inner">
+      <span class="logo"><a href="{{ site.baseurl}}/">jwspain.co</a></span>
+      <span class="menu">
+        <a href="{{ site.baseurl}}/">Home</a>&nbsp | &nbsp
+        <a href="{{ site.baseurl}}/post.html">Post</a>&nbsp | &nbsp
+        <a href="https://github.com/juzten">Code  </a>&nbsp | &nbsp
+        <a href="{{ site.baseurl}}/about.html">About  </a>
+      </span>
+    </div>
+  </header>
+  </div>
+
+  <div class="container2 myclass">
+    <div id="content" class="left myclass">
+      <!-- <h3>Content</h3> -->
+      <br>
+      <ul style="padding-left:30px">
+      {% for post in site.posts %}
+      <li><span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+      </ul>
+      <br>
+    </div>
+
+
+
+    <div class="right-wrapper myclass">
+      <div id="sidebar" class="right myclass">
+        <!-- <h3>Sidebar</h3> -->
+        <p>
+          <h2>Sidebar</h2><br>
+          <ul style="padding-left:30px">
+            <li><a href="https://twitter.com/jwsmusic">Twitter</a></li>
+            <li><a href="https://plus.google.com/+JustinSpainisawesome/posts">g+</a></li>   
+            <li><a href="https://github.com/juzten">github</a></li>
+                      <li><a href="http://google.com">reddit</a></li>
+          <li><a href="http://google.com">email</a></li>
+          </ul>
+
+          <br>
+           <h2>Projects</h2><br>
+              <ul style="padding-left:30px">
+                <li><a href="http://google.com">chadev</a></li>
+                <li><a href="http://google.com">#</a></li>   
+                <li><a href="http://google.com">#</a></li>
+                <li><a href="http://google.com">#</a></li>
+                <li><a href="http://google.com">#</a></li>
+              </ul>
+        </p>
+      </div>
+    </div>
+    <div class="clear">&nbsp;</div>
+  </div><!-- end right-wrapper -->
+
+    <div id="footer">
+      <!-- <h4>Footer</h4> -->
+      <a href="{{ site.baseurl}}/">Go Home</a>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <br><br><br><br><br><br><br><br>
+<hr>
+<br><br><br><br><br><br><br><br> -->
+
+
+
+
+<!-- <div id="container">
   <header class="group">
     <div class="header-inner">
       <h1 class="logo"><a href="{{ site.baseurl}}/">Hello World Blog.</a></h1>
+      <span style="float: right;">
+        <a href="{{ site.baseurl}}/">Home</a>&nbsp | &nbsp
+        <a href="{{ site.baseurl}}/post.html">Post</a>&nbsp | &nbsp
+        <a href="{{ site.baseurl}}/about.html">About  </a>
+      </span>
     </div>
+    
+    
   </header>
   <div id="content">
 
@@ -36,6 +132,9 @@ title: Hello World Blog
     </ul>
     </p>
   </div>
-</div>
+</div> -->
+
+
+
 </body>
 </html>

@@ -2,6 +2,19 @@
 * Jekyll quickstart master CSS file.
 */
 
+/* custom font for header - archistico bold*/
+@font-face {
+    font-family: 'archisticobold';
+    src: url('fonts/Archistico_Bold-webfont.eot');
+    src: url('fonts/Archistico_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Archistico_Bold-webfont.woff') format('woff'),
+         url('fonts/Archistico_Bold-webfont.ttf') format('truetype'),
+         url('fonts/Archistico_Bold-webfont.svg#archisticobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* mini-reset. */
 
 h1, h2, h3, h4, h5, div, p, ul, li, section {
@@ -17,17 +30,20 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
+  min-width: 200px;
+  /*background: #919AA3;*/
+  background: #A19F95;
 }
 
 a:link,
 a:visited {
-  color: #F33;
+  color: #13176D;
   font-weight: bold;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:hover {
-  color: #F33;
+  color: #6491A3;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -55,7 +71,7 @@ pre code {
 }
 
 #content {
-  padding: 25px 0 0;
+  /*padding: 25px 0 0;*/
 }
 
 p {
@@ -69,8 +85,9 @@ header {
 }
 
 header .logo {
+  font-family: 'archisticobold';
   float: left;
-  font-size: 2em;
+  font-size: 4em;
   margin: 0;
   text-transform: uppercase;
 }
@@ -80,6 +97,20 @@ header .logo a:hover,
 header .logo a:visited {
   color: #000000;
   text-decoration: none;
+  font-weight: normal;
+}
+
+.menu{
+  float: right;
+}
+.menu a:link, a:visited {
+  font-weight: bold;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #13176D;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 #main {
@@ -87,23 +118,35 @@ header .logo a:visited {
   margin: 0;
   padding: 0;
 }
+#main h1{
+  font-size: 2.1em;
+}
 
 #main h2 {
   font-size: 1.75em;
   margin-bottom: 0.2em;
 }
 
-#main h3,
+#main h3{
+  font-size: 1.4em;
+}
+
+.noBottom{
+  margin-bottom: -0.2em;
+}
+
+/*#main h3,
 #main h4 {
   margin-bottom: 0.75em;
-}
+}*/
 
-#main ul {
+/*#main ul {
   list-style-type: none;
-}
+}*/
 
 #main ul li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  margin-left: 15px;
 }
 
 
@@ -135,3 +178,174 @@ header .logo a:visited {
   min-height: 1px;
 }
 
+
+
+/*new code*/
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+  padding: 5px;
+  width: 960px;
+  margin: 20px auto;
+  /*position: absolute;*/
+  overflow: hidden;
+}
+#header {
+  /*height: 180px;*/
+  padding-bottom: 15px;
+}
+#wrapper{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /*height: auto;*/
+
+}
+#content {
+  /*width: 600px;*/
+  float: left;
+  min-height: 600px;
+  padding: 1%;
+  /*margin-right: 2%;*/
+    width: 70%;
+  margin-right: 2%;
+}
+#sidebar {
+  /*height: 100%;*/
+  float: left;
+  /*width: 300px;*/
+      /*padding-left: 1%; */
+      padding: 1%;
+    width: 28%;
+
+  /*float: right;*/
+  /*min-height: 100%;*/
+  /*padding: 1%;*/
+}
+#footer {
+  clear: both;
+  min-height: 80px;
+  padding: 1%;
+}
+
+/*test code*/
+
+div .myclass {
+    /*font-family: Tahoma, Verdana sans-serif;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    /*color: white;*/
+}
+
+.container2 {
+  width: 100%;
+    position: relative;
+    /*background-color: rgba(255, 255, 0, 1);*/
+    margin-bottom: 10px;
+}
+.left {
+  /*width: 48%;*/
+  /*background-color: rgba(0, 0, 255, 0.6);*/
+  float: left;
+    /*color: white;*/
+    margin-right: 2%;
+    padding: 20px;
+    /*border: dashed thick blue;*/
+}
+.right-wrapper {
+  /*width: 48%;*/
+  float: left;
+
+}
+.right {
+  height: 100%;
+  position: absolute;
+    /*background-color: rgba(0, 127, 0, 0.6);*/
+    /*padding: 20px;*/
+    /*border: dashed thick green;*/
+
+}
+.clear {
+  clear: both;
+  height: 0;
+}
+
+/*end test code-------------------------*/
+
+
+
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+  
+  #pagewrap {
+    width: 94%;
+  }
+  #content {
+    width: 65%;
+  }
+  #sidebar {
+    width: 30%;
+  }
+
+}
+
+/* for 700px or less */
+@media screen and (max-width: 700px) {
+  #content {
+    width: auto;
+    float: none;
+    min-height: 0px;
+  }
+  #sidebar {
+    width: auto;
+    float: none;
+    min-height: 0px;
+  }
+  .menu{
+    float: left;
+    margin-left: 5px;
+  }
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px){
+  #header {
+    height: auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  header .logo {
+  font-size: 2.5em;
+  margin-left: 5px;
+}
+  #sidebar {
+    display: none;
+  }
+
+}
+
+/* border & guideline (you can ignore these) */
+#content {
+  /*background: #f8f8f8;*/
+  /*background: #f0efef;*/
+}
+#sidebar {
+  /*background: #f0efef;*/
+}
+#header {
+  margin-bottom: 5px;
+}
+#pagewrap, #header, #content, #sidebar, #footer {
+  /*border: solid 1px #ccc;*/
+}
+#content, #footer, #sidebar{
+  background: #f0efef;
+}
