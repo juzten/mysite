@@ -1,7 +1,6 @@
 ---
 layout: default 
 title: jwspain.co
-root: "../"
 ---
 
 <!DOCTYPE html>
@@ -16,12 +15,12 @@ root: "../"
   <div id="header">
     <header class="group">
     <div class="header-inner">
-      <span class="logo"><a href="{{ site.baseurl}}/">jwspain.co</a></span>
+      <span class="logo"><a href="{{ site.root}}">jwspain.co</a></span>
       <span class="menu">
-        <a href="{{ site.baseurl}}/">Home</a>&nbsp | &nbsp
-        <a href="{{ site.baseurl}}/post.html">Post</a>&nbsp | &nbsp
+        <a href="{{ site.root}}">Home</a>&nbsp | &nbsp
+        <a href="{{ site.root}}post.html">Post</a>&nbsp | &nbsp
         <a href="https://github.com/juzten">Code  </a>&nbsp | &nbsp
-        <a href="{{ site.baseurl}}/about.html">About  </a>
+        <a href="{{ site.root}}about.html">About  </a>
       </span>
     </div>
   </header>
@@ -33,7 +32,7 @@ root: "../"
       <br>
       <ul style="padding-left:30px">
       {% for post in site.posts %}
-      <li><span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
+      <li><span class="post-date">{{ post.date | date_to_string }}</span> <a href="{{ site.root}}{{ post.url }}">{{ post.title }}</a></li>
       {% endfor %}
       </ul>
       <br>
@@ -71,7 +70,7 @@ root: "../"
 
     <div id="footer">
       <!-- <h4>Footer</h4> -->
-      <a href="{{ site.baseurl}}/">Go Home</a>
+      <a href="{{ site.root}}">Go Home</a>
     </div>
 
   </div>

@@ -1,4 +1,4 @@
 name: jwspain.co
 markdown: redcarpet
 pygments: true
-baseurl: /mysite
+root: "../"
