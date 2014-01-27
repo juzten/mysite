@@ -1,6 +1,7 @@
 ---
 layout: default
 title: jwspain.co
+root: "../"
 ---
 
 <div id="home">
@@ -9,7 +10,7 @@ title: jwspain.co
       <li>
       	<span>{{ post.date | date_to_string }}</span> 
       	&raquo; 
-      	<a href="{{ site.baseurl}}/{{ post.url }}">{{ post.title }}</a>
+      	<a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a>
       </li>
     {% endfor %}
   </ul>

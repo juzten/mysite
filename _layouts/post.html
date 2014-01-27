@@ -1,13 +1,14 @@
 ---
 layout: post 
 title: post
+root: "../"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Post</title>
-<link rel="stylesheet" media="screen" href="{{ site.baseurl}}css/master.css"/>
+<title>jwspain.co</title>
+<link rel="stylesheet" media="screen" href="{{ site.url }}css/master.css"/>
 
 </head>
 <body>
@@ -15,12 +16,12 @@ title: post
   <div id="header">
     <header class="group">
       <div class="header-inner">
-        <span class="logo"><a href="{{ site.baseurl}}/">jwspain.co</a></span>
+        <span class="logo"><a href="{{ site.url }}index.html">jwspain.co</a></span>
         <span class="menu">
-          <a href="{{ site.baseurl}}/">Home</a>&nbsp | &nbsp
-          <a href="{{ site.baseurl}}/post.html">Post</a>&nbsp | &nbsp
+          <a href="{{ site.url }}index.html">Home</a>&nbsp | &nbsp
+          <a href="{{ site.url }}post.html">Post</a>&nbsp | &nbsp
           <a href="https://github.com/juzten">Code  </a>&nbsp | &nbsp
-          <a href="{{ site.baseurl}}/about.html">About  </a>
+          <a href="{{ site.url }}about.html">About  </a>
         </span>
       </div>
     </header>
@@ -51,7 +52,7 @@ title: post
   
   <div id="footer">
     <!-- <h4>Footer</h4> -->
-    <a href="{{ site.baseurl}}/">Go Home</a>
+    <a href="{{ site.url }}index.html">Go Home</a>
   </div>
   
 </div>
