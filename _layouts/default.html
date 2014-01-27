@@ -8,7 +8,7 @@ root: "../"
 <html lang="en">
 <head>
 <title>jwspain.co</title>
-<link rel="stylesheet" media="screen" href="{{ site.baseurl }}css/master.css"/>
+<link rel="stylesheet" media="screen" href="{{ site.baseurl }}/css/master.css"/>
 </head>
 <body>
 <div id="pagewrap">
@@ -16,12 +16,12 @@ root: "../"
   <div id="header">
     <header class="group">
     <div class="header-inner">
-      <span class="logo"><a href="{{ site.baseurl }}">jwspain.co</a></span>
+      <span class="logo"><a href="{{ site.baseurl }}/">jwspain.co</a></span>
       <span class="menu">
-        <a href="{{ site.baseurl }}">Home</a>&nbsp | &nbsp
-        <a href="{{ site.baseurl }}post.html">Post</a>&nbsp | &nbsp
+        <a href="{{ site.baseurl }}/">Home</a>&nbsp | &nbsp
+        <a href="{{ site.baseurl }}/post.html">Post</a>&nbsp | &nbsp
         <a href="https://github.com/juzten">Code  </a>&nbsp | &nbsp
-        <a href="{{ site.baseurl }}about.html">About  </a>
+        <a href="{{ site.baseurl }}/about.html">About  </a>
       </span>
     </div>
   </header>
@@ -35,7 +35,7 @@ root: "../"
       {% for post in site.posts %}
       <li>
         <span class="post-date">{{ post.date | date_to_string }}</span> 
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endfor %}
       </ul>
@@ -74,7 +74,7 @@ root: "../"
 
     <div id="footer">
       <!-- <h4>Footer</h4> -->
-      <a href="{{ site.baseurl }}">Go Home</a>
+      <a href="{{ site.baseurl }}/">Go Home</a>
     </div>
 
   </div>
