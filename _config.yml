@@ -1,6 +1,6 @@
 name: jwspain.co
 markdown: redcarpet
 pygments: true
-baseurl: http://juzten.github.io/mysite
+# baseurl: http://juzten.github.io/mysite
 # url: https://github.com/juzten/mysite
 url: ''
