@@ -336,23 +336,22 @@ MEDIA QUERIES
 #content {
   /*background: #f8f8f8;*/
   /*background: #f0efef;*/
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
 }
 #sidebar {
   /*background: #f0efef;*/
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
 }
 #header {
   margin-bottom: 5px;
 }
-#footer {
+/*styles for sidebar, footer, and content div*/
+#footer, #content, #sidebar {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+
+  -webkit-box-shadow: 2px 2px 2px #000000;
+  -moz-box-shadow: 2px 2px 2px #000000;
+  box-shadow: 2px 2px 2px #000000;
 }
 #pagewrap, #header, #content, #sidebar, #footer {
   /*border: solid 1px #ccc;*/
