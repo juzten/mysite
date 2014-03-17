@@ -18,7 +18,7 @@ root: "../"
       <br>
       {% for post in site.posts %}
       <li>
-        <span class="post-date">{{ post.date | date_to_string }}</span>
+        <span class="post-date">{{ post.date | date_to_string }}</span>&nbsp
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </li>
       <br><br>

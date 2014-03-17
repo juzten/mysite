@@ -23,10 +23,10 @@ h1, h2, h3, h4, h5, div, p, ul, li, section {
 }
 
 /* main styles */
-
+/*font-family: 'Lato', sans-serif;*/
 body {
   font-size: 100%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1;
   margin: 0;
   padding: 0;
@@ -282,7 +282,7 @@ MEDIA QUERIES
 *************************************************************************************/
 /* for 980px or less */
 @media screen and (max-width: 980px) {
-  
+
   #pagewrap {
     width: 94%;
   }
