@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, div, p, ul, li, section {
   padding: 0;
 }
 
+h1{
+  font-family: 'Lato-400';
+}
+
 /* main styles */
 /*font-family: 'Lato', sans-serif;*/
 body {
