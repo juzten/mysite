@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 title: jwspain.co
 root: "../"
 ---
@@ -12,7 +12,7 @@ root: "../"
 </head>
 <body>
 <div id="pagewrap">
-  
+
   <div id="header">
     <header class="group">
     <div class="header-inner">
@@ -30,16 +30,19 @@ root: "../"
   <div class="container2 myclass">
     <div id="content" class="left myclass">
       <!-- <h3>Content</h3> -->
-      <br>
+<!--       <br>
       <ul style="padding-left:30px">
       {% for post in site.posts %}
       <li>
-        <span class="post-date">{{ post.date | date_to_string }}</span> 
+        <span class="post-date">{{ post.date | date_to_string }}</span>
         <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endfor %}
       </ul>
-      <br>
+      <br> -->
+
+      {{ content }}
+
     </div>
 
 
@@ -48,23 +51,23 @@ root: "../"
       <div id="sidebar" class="right myclass">
         <!-- <h3>Sidebar</h3> -->
         <p>
-          <h2>Sidebar</h2><br>
+          <h2>Be Social</h2><br>
           <ul style="padding-left:30px">
             <li><a href="https://twitter.com/jwsmusic">Twitter</a></li>
-            <li><a href="https://plus.google.com/+JustinSpainisawesome/posts">g+</a></li>   
-            <li><a href="https://github.com/juzten">github</a></li>
-                      <li><a href="http://google.com">reddit</a></li>
-          <li><a href="http://google.com">email</a></li>
+            <li><a href="https://plus.google.com/+JustinSpainisawesome/posts">Google+</a></li>
+            <li><a href="https://github.com/juzten">Github</a></li>
+                      <li><a href="http://www.reddit.com/user/juzten">Reddit</a></li>
+          <li><a href="mailto:juzten@gmail.com">Email</a></li>
           </ul>
 
           <br>
            <h2>Projects</h2><br>
               <ul style="padding-left:30px">
-                <li><a href="http://google.com">chadev</a></li>
-                <li><a href="http://google.com">#</a></li>   
-                <li><a href="http://google.com">#</a></li>
-                <li><a href="http://google.com">#</a></li>
-                <li><a href="http://google.com">#</a></li>
+                <li><a href="http://chadev.github.io/">chadev site</a></li>
+                <li><a href="http://chadev.reddit.com">chadev reddit</a></li>
+                <li><a href="http://www.youtube.com/user/TheFutureGeeks">Future Geeks</a></li>
+<!--                 <li><a href="http://google.com">#</a></li>
+                <li><a href="http://google.com">#</a></li> -->
               </ul>
         </p>
       </div>
@@ -113,8 +116,8 @@ root: "../"
         <a href="{{ site.baseurl}}/about.html">About  </a>
       </span>
     </div>
-    
-    
+
+
   </header>
   <div id="content">
 
