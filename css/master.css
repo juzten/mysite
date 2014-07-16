@@ -2,6 +2,14 @@
 * Jekyll quickstart master CSS file.
 */
 
+/*    */
+.rounded{
+  border:1px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
 /* custom font for header - archistico bold*/
 @font-face {
     font-family: 'archisticobold';
